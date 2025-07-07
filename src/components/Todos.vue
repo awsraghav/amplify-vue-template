@@ -26,7 +26,7 @@ function createTodo() {
   });
 }
 
-async function deleteTodo(id) {
+async function deleteTodo(id:string) {
   await client.models.Todo.delete({id})
   await listTodos()
 }
